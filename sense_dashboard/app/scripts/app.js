@@ -24,7 +24,7 @@ const app = {
         });
     },
     updateInFirebase() {
-
+        
     }
 }
 

@@ -19,7 +19,7 @@ def index():
 
 @app.route('/hello')
 def hello():
-    return 'You have reached the Pi of F-Rogers'
+    return 'You have reached the Pi of TheAlphaKarp'
 
 @app.route('/sensehat', methods=['GET', 'POST'])
 def sensehat():
