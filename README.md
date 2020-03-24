@@ -1,4 +1,4 @@
-# labo-3-firebase-ArneSix
+# labo4-sensedashboard-github-pages
 
 ### DISCLAIMER
 
