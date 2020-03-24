@@ -20,18 +20,29 @@
         <button type="submit" class="btn btn-primary" id="btnChange">Submit</button>
     </form>
     <div class="sensor-data">
+        <label for="">humidity</label>
         <p class="humidity"></p>
+        <label for="">temperature</label>
         <p class="temp"></p>
+        <label for="">compass</label>
         <p class="compass"></p>
 
+        <label for="">accelero</label>
         <div class="accelero">
+            <label for="">pitch</label>
             <p class="a-pitch"></p>
+            <label for="">roll</label>
             <p class="a-roll"></p>
+            <label for="">yaw</label>
             <p class="a-yaw"></p>
         </div>
+        <label for="">gyro</label>
         <div class="gyro">
+            <label for="">pitch</label>
             <p class="g-pitch"></p>
+            <label for="">roll</label>
             <p class="g-roll"></p>
+            <label for="">yaw</label>
             <p class="g-yaw"></p>
         </div>
     </div>
@@ -40,8 +51,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
-    <script src="./config/firebase.js"></script>
-    <script src="./scripts/app.js"></script>
+    <script defer src="./config/firebase.js"></script>
+    <script defer src="./scripts/app.js"></script>
 
 </body>
 </html>
