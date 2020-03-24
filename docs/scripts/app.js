@@ -7,10 +7,12 @@ const app = {
     init() {
         // initialiseer de firebase app
         firebase.initializeApp(firebaseConfig);
+
         this._db = firebase.firestore();
         // cache the DOM
         this.cacheDOMElements();
         this.cacheDOMEvents();
+        this.cacheFirestoreChanges();
 
         this.humidity = document.querySelector('.humidity');
         this.compass = document.querySelector('.compass');
@@ -44,8 +46,9 @@ const app = {
         });
     },
     cacheFirestoreChanges() {
-        this._db.collection(dbConfig.collection).doc(dbConfig.document).onSnapShot((snap) => {
-            const data = snap.data();
+        this._db.collection(dbConfig.collection).doc(dbConfig.document).onSnapshot((snap) => {
+            const response = snap.data();
+            const data = response.sensor;
 
             this.humidity.innerText = data.humidity;
             this.temp.innerText = data.temp;
